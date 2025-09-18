@@ -29,8 +29,5 @@ El proyecto está construido en **ASP.NET WebForms (C#)** y utiliza HTML, CSS y 
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
 
-1. Cloná el repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/perfect-garden.git
+
