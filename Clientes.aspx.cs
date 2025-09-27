@@ -7,8 +7,8 @@ using System.Web.UI.WebControls;
 
 namespace perfecgarden1._3
 {
-    public partial class About : Page
+    public partial class Contact : Page
     {
-      
+       
     }
 }

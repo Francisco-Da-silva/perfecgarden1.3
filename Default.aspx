@@ -78,7 +78,7 @@
         }
 
         .slide-2 .slide-background {
-            background-image: url('https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=1200');
+            background-image: url( "imagenes/fondopj.png");
         }
 
         .slide-2 .slide-overlay {
@@ -86,7 +86,7 @@
         }
 
         .slide-3 .slide-background {
-            background-image: url('https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1200');
+            background-image: url("imagenes/pileta-sakura.jpeg" );
         }
 
         .slide-3 .slide-overlay {
@@ -676,13 +676,13 @@
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
                     <div class="slide-inner">
-                        <div class="slide-icon">🌳</div>
+                        <div class="slide-icon"><img src="imagenes/Logo-PG-sinfondo.png" alt="Perfect Garden" height="100"></div>
                         <div class="slide-badge">SERVICIOS</div>
                         <h2 class="slide-title">Mantenimiento de Áreas Verdes</h2>
                         <p class="slide-text">
                             En Perfect Garden nos especializamos en el mantenimiento integral de espacios verdes, brindando soluciones profesionales y personalizadas para campos, hogares y empresas. Nuestro objetivo es garantizar que cada espacio luzca prolijo, saludable y armonioso durante todo el año.
                         </p>
-                        <a href="#" class="slide-button">Ver más</a>
+                        <a href="Mantenimientoareasverdes.aspx" class="slide-button">Seguir leyendo</a>
                     </div>
                 </div>
             </div>
@@ -693,27 +693,28 @@
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
                     <div class="slide-inner">
-                        <div class="slide-icon">🌊</div>
+                        <div class="slide-icon"><img src="imagenes/Logo-PG-sinfondo.png" alt="Perfect Garden" height="100"></div>
                         <div class="slide-badge">SERVICIOS</div>
                         <h2 class="slide-title">Servicio de Piletas</h2>
                         <p class="slide-text">
                             Ofrecemos un completo servicio de mantenimiento y limpieza de piletas, asegurando que el agua se mantenga limpia, cristalina y segura durante toda la temporada. Nos encargamos del control químico, limpieza de fondos, paredes y filtrado.
                         </p>
-                        <a href="#" class="slide-button">Ver más</a>
+                        <a href="Mantenimientodepileta.aspx" class="slide-button">Ver más</a>
                     </div>
                 </div>
             </div>
 
             <!-- Navigation Arrows -->
-            <button class="carousel-nav prev" onclick="prevSlide()">‹</button>
-            <button class="carousel-nav next" onclick="nextSlide()">›</button>
+              <button type="button" class="carousel-nav prev" onclick="prevSlide()">‹</button>
+              <button type="button" class="carousel-nav next" onclick="nextSlide()">›</button>
 
-            <!-- Dot Indicators -->
-            <div class="carousel-dots">
-                <button class="carousel-dot active" onclick="goToSlide(0)"></button>
-                <button class="carousel-dot" onclick="goToSlide(1)"></button>
-                <button class="carousel-dot" onclick="goToSlide(2)"></button>
-            </div>
+           <!-- Dot Indicators -->
+             <div class="carousel-dots">
+             <button type="button" class="carousel-dot active" onclick="goToSlide(0)"></button>
+             <button type="button" class="carousel-dot" onclick="goToSlide(1)"></button>
+             <button type="button" class="carousel-dot" onclick="goToSlide(2)"></button>
+           </div>
+
 
             <!-- Progress Bar -->
             <div class="carousel-progress">
@@ -798,7 +799,7 @@
                                     <span class="btn-icon">📱</span>
                                     Escribir por WhatsApp
                                 </a>
-                                <a href="mailto:perfectgarden@example.com" class="btn-cta-secondary">
+                                <a href="mailto:perfectgarden98@gmail.com" class="btn-cta-secondary">
                                     <span class="btn-icon">📧</span>
                                     Enviar Email
                                 </a>

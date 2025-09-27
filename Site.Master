@@ -1,31 +1,15 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="perfecgarden1._3.SiteMaster" %>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
 
 <!DOCTYPE html>
-<style>
-
-    navbar-collapse collapse
-    {
-        background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-    }
-
-    .navbar-nav .nav-link {
-    color: white !important;
-    font-weight: bold;
-    margin-right: 150px;
-}
-
-.navbar-nav .nav-link.active {
-    color: #ff0000;
-}
-</style>
-
 <html lang="es">
 <head runat="server">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
-
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -34,13 +18,50 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <style>
+      /* Fondo del navbar */
+      .navbar-collapse {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%); /* Verde */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+
+      }
+
+      /* Links como botones atractivos */
+      .navbar-nav > li > a {
+/**/        color: #fff !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        /*padding: 8px 18px !important;
+        border-radius: 25px !important;
+        background: linear-gradient(145deg, #43a047, #2e7d32) !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
+        transition: all 0.3s ease !important;
+        margin: 0 px;*/
+      }
+
+      /* Hover */
+      .navbar-nav > li > a:hover {
+        background: linear-gradient(145deg, #66bb6a, #43a047) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.25) !important;
+        color: #fffde7 !important;
+      }
+
+      /* Click */
+      .navbar-nav > li > a:active {
+        transform: scale(0.95) !important;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.2) !important;
+      }
+    </style>
 </head>
 <body>
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
@@ -53,40 +74,29 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
 
-
+        <!-- NAVBAR -->
         <div class="navbar navbar-inverse navbar-fixed-top">
-
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                 
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-<%--                        <li><a runat="server" href="~/About">Acerca de</a></li>--%>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
-                    </ul>
-                </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a runat="server" href="~/">Inicio</a></li>
+                     <li><a runat="server" href="~/Clientes">Clientes</a></li>
+                    <li><a runat="server" href="~/Contact">Contacto</a></li>
+                </ul>
             </div>
         </div>
+
+        <!-- Contenido -->
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - PerfecGarden</p>
             </footer>
         </div>
-
     </form>
 </body>
 </html>
+

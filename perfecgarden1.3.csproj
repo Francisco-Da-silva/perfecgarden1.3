@@ -105,10 +105,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Clientes.aspx" />
+    <Content Include="imagenes\fondopj.png" />
     <Content Include="imagenes\logo-de-perfect-garden.png" />
     <Content Include="imagenes\Logo-PG-sinfondo.png" />
     <Content Include="imagenes\pileta-sakura.jpeg" />
     <Content Include="imagenes\tractor-parque-la-verdad.jpeg" />
+    <Content Include="Mantenimientodepileta.aspx" />
+    <Content Include="Mantenimientoareasverdes.aspx" />
     <Content Include="quienessomos.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -128,6 +132,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="imagenes\Fondparque.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -160,10 +165,31 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
-    <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Web1.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientodepileta.aspx.cs">
+      <DependentUpon>Mantenimientodepileta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientodepileta.aspx.designer.cs">
+      <DependentUpon>Mantenimientodepileta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientoareasverdes.aspx.cs">
+      <DependentUpon>Mantenimientoareasverdes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientoareasverdes.aspx.designer.cs">
+      <DependentUpon>Mantenimientoareasverdes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="quienessomos.aspx.cs">
       <DependentUpon>quienessomos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,7 +240,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
+    <Folder Include="App_GlobalResources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -2,28 +2,137 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+  <!-- Sección Quiénes Somos -->
+  <section class="about-section" id="quienes-somos">
+    <div class="about-header">
+      <h2>Quiénes Somos</h2>
+      <p>
+        En <strong>Perfect Garden</strong> nos especializamos en brindar soluciones integrales para el
+        mantenimiento de espacios verdes, combinando experiencia, responsabilidad y equipamiento de última
+        generación.
+      </p>
+    </div>
 
-  <meta charset="UTF-8">
-  <title>Perfect Garden - Quiénes Somos</title>
-  <link rel="stylesheet" href="estilos.css"> <!-- Tu hoja de estilo -->
+    <div class="about-grid">
+      <!-- Experiencia -->
+      <div class="about-card">
+        <div class="about-icon experiencia-icon">🌿</div>
+        <h3>Experiencia</h3>
+        <p>
+          Contamos con años de trayectoria en el rubro, ofreciendo servicios confiables y de calidad en
+          barrios privados, empresas y campos.
+        </p>
+      </div>
 
-  <main class="container p-4">
-    <h1>¿Quiénes somos?</h1>
-    <p>
-      Perfect Garden es una empresa familiar especializada en el mantenimiento integral de espacios verdes, parques y cercos. Fundada por los hermanos Francisco y Leonardo Da Silva, combinamos desde el primer día nuestra pasión por el trabajo al aire libre con un fuerte compromiso por ofrecer soluciones técnicas de calidad.
-    </p>
-    <p>
-      Desde nuestros inicios, nos enfocamos en brindar un servicio profesional y sostenido en el tiempo, adaptado a las necesidades de clientes exigentes como empresas, establecimientos rurales y canchas de polo. Nuestro objetivo es que cada espacio verde luzca impecable, todo el año.
-    </p>
-    <p>
-      Ofrecemos <strong>servicios de corte de césped, desmalezado y poda</strong>, con un esquema de <strong>mantenimiento mensual</strong>, que asegura un seguimiento continuo del estado del parque. Trabajamos en la zona de <strong>Exaltación de la Cruz y Pilar</strong>, con <strong>total autonomía operativa</strong>, gracias a nuestra maquinaria propia: <em>dos tractores, desmalezadoras, sopladores y corta cercos de última generación</em>.
-    </p>
-    <p>
-      Uno de los aspectos más valorados por nuestros clientes es la <strong>confianza</strong>. Ingresamos en horarios organizados y pautados con anticipación, adaptándonos a la dinámica interna de cada empresa. Además, brindamos <strong>facturación formal</strong>, vestimenta e indumentaria de trabajo adecuada, y un enfoque profesional en cada tarea.
-    </p>
-    <p>
-      A lo largo de más de 10 años, construimos relaciones sostenidas con nuestros clientes. Algunos de los trabajos más destacados que realizamos actualmente son en <strong>Campo Haras La Elisa</strong>, <strong>Supermercado FJ</strong> y <strong>Distribuidora ERS</strong>, quienes año tras año siguen confiando en Perfect Garden.
-    </p>
-  </main>
+      <!-- Equipo -->
+      <div class="about-card">
+        <div class="about-icon equipo-icon">👷</div>
+        <h3>Equipo Capacitado</h3>
+        <p>
+          Nuestro personal está entrenado en el uso de herramientas modernas y en técnicas de cuidado para
+          garantizar resultados profesionales.
+        </p>
+      </div>
+
+      <!-- Compromiso -->
+      <div class="about-card">
+        <div class="about-icon compromiso-icon">🤝</div>
+        <h3>Compromiso</h3>
+        <p>
+          Priorizamos la puntualidad, la prolijidad y la satisfacción de nuestros clientes en cada servicio
+          realizado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Sección Quiénes Somos */
+    .about-section {
+      padding: 4rem 1rem;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      font-family: Arial, sans-serif;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .about-header h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #212529;
+      margin-bottom: 1rem;
+    }
+
+    .about-header p {
+      font-size: 1.25rem;
+      color: #6c757d;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .about-card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .about-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 1rem auto;
+    }
+
+    .experiencia-icon {
+      background-color: #e6f7ff;
+      color: #0d6efd;
+    }
+
+    .equipo-icon {
+      background-color: #dcf8e6;
+      color: #4CAF50;
+    }
+
+    .compromiso-icon {
+      background-color: #fff4e6;
+      color: #ff6600;
+    }
+
+    .about-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #212529;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-card p {
+      color: #6c757d;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
 
 </asp:Content>
+
