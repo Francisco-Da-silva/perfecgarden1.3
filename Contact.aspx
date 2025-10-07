@@ -43,7 +43,7 @@
         <div class="contact-icon linkedin-icon">🔗</div>
         <h3>LinkedIn</h3>
         <p>Conectá con nosotros</p>
-        <a href="https://www.linkedin.com/company/perfec-garden" target="_blank" class="contact-link linkedin-link">
+        <a href="https://www.linkedin.com/company/perfec-garden/?viewAsMember=true" target="_blank" class="contact-link linkedin-link">
           Ver perfil
         </a>
       </div>
